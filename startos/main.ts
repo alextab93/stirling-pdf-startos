@@ -50,7 +50,7 @@ export const main = sdk.setupMain(async ({ effects }) => {
         SYSTEM_GOOGLEVISIBILITY: 'false',
         SYSTEM_ENABLEANALYTICS: 'false',
         SHOW_SURVEY: 'false',
-        METRICS_ENABLED: 'false',
+        METRICS_ENABLED: 'true',
         SPRINGDOC_API_DOCS_ENABLED: 'false',
         SPRINGDOC_SWAGGER_UI_ENABLED: 'false',
         MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: 'health',
@@ -64,7 +64,7 @@ export const main = sdk.setupMain(async ({ effects }) => {
           [
             'sh',
             '-c',
-            "curl -fsS http://localhost:8080/api/v1/info/status | grep -qx 'UP'",
+            "curl -fsS http://localhost:8080/api/v1/info/status | grep -q 'UP'",
           ],
           subcontainer,
           {

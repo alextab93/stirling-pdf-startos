@@ -6,6 +6,12 @@
 
 Stirling PDF is a self-hosted PDF editor and processor. This package uses the unmodified official `stirlingtools/stirling-pdf:2.14.3` standard image.
 
+## Quick start (StartOS)
+
+Install RomM from the start9.tabordalab.com (TabordaLab StartOS registry), or sideload the `.s9pk` package.
+
+<img width="1419" height="527" alt="image" src="https://github.com/user-attachments/assets/38d7f4f6-73e2-4b8d-a855-b00aa41f852f" />
+
 ## Runtime
 
 The package supports `x86_64` and `aarch64`. It starts the upstream entrypoint on HTTP port 8080 and exposes one StartOS interface, **Stirling PDF**, at `/`. The API remains on that same origin.
